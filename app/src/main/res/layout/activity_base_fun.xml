@@ -7,5 +7,14 @@
     android:orientation="vertical"
     tools:context="com.lx.kotlinfirst.BaseFunActivity">
 
-
+    <TextView
+        android:id="@+id/firstButton"
+        style="@style/ButtonStyle"
+        android:textColor="@color/colorAccent"
+        android:text="Base Fun Test"/>
+    <TextView
+        android:id="@+id/secondButton"
+        style="@style/ButtonStyle"
+        android:textColor="@color/colorAccent"
+        android:text="基本语法的尝试"/>
 </LinearLayout>
