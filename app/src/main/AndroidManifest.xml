@@ -9,35 +9,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FirstActivity">
+        <activity android:name=".activity.FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".BaseFunActivity">
+        <activity android:name=".activity.BaseFunActivity">
         </activity>
         <activity
-            android:name=".DrawActivity"
+            android:name=".activity.DrawActivity"
             android:label="@string/title_activity_draw"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".ListDemoActivity">
+        <activity android:name=".activity.ListDemoActivity">
         </activity>
         <activity
-            android:name=".ItemListActivity"
+            android:name=".activity.ItemListActivity"
             android:label="@string/title_item_list"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".ItemDetailActivity"
+            android:name=".activity.ItemDetailActivity"
             android:label="@string/title_item_detail"
-            android:parentActivityName=".ItemListActivity"
+            android:parentActivityName=".activity.ItemListActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.lx.kotlinfirst.ItemListActivity"/>
+                android:value="com.lx.kotlinfirst.activity.ItemListActivity"/>
         </activity>
     </application>
 

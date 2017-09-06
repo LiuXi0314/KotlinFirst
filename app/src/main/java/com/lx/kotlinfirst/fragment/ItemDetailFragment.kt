@@ -1,14 +1,13 @@
-package com.lx.kotlinfirst
+package com.lx.kotlinfirst.fragment
 
-import android.app.Activity
-import android.support.design.widget.CollapsingToolbarLayout
 import android.os.Bundle
+import android.support.design.widget.CollapsingToolbarLayout
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-
+import com.lx.kotlinfirst.R
 import com.lx.kotlinfirst.dummy.DummyContent
 
 /**
@@ -51,8 +50,7 @@ class ItemDetailFragment : Fragment() {
 
         // Show the dummy content as text in a TextView.
         if (mItem != null) {
-            var textView: TextView =rootView.findViewById(R.id.item_detail)
-            textView.text = mItem!!.details
+            rootView.findViewById<TextView>(R.id.item_detail).text == mItem!!.details
         }
 
         return rootView

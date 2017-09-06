@@ -1,8 +1,9 @@
-package com.lx.kotlinfirst
+package com.lx.kotlinfirst.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.lx.kotlinfirst.R
 
 class FirstActivity : AppCompatActivity() {
 
@@ -23,7 +24,7 @@ class FirstActivity : AppCompatActivity() {
         }
 
         findViewById(R.id.listExample).setOnClickListener {
-            startActivity(Intent().setClass(this,ItemListActivity::class.java))
+            startActivity(Intent().setClass(this, ItemListActivity::class.java))
         }
 
     }

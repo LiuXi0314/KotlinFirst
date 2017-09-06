@@ -1,10 +1,12 @@
-package com.lx.kotlinfirst
+package com.lx.kotlinfirst.activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.TextView
 import android.widget.Toast
+import com.lx.kotlinfirst.Hello
+import com.lx.kotlinfirst.R
 
 class BaseFunActivity : AppCompatActivity() {
 
