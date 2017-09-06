@@ -12,4 +12,19 @@
         style="@style/ButtonStyle"
         android:text="Base Fun Test"/>
 
+    <TextView
+        android:id="@+id/drawActivity"
+        style="@style/ButtonStyle"
+        android:text="DrawLayoutDemo"/>
+
+    <TextView
+        android:id="@+id/listDemo"
+        style="@style/ButtonStyle"
+        android:text="listDemo"/>
+    <TextView
+        android:id="@+id/listExample"
+        style="@style/ButtonStyle"
+        android:text="listExample"/>
+
+
 </LinearLayout>

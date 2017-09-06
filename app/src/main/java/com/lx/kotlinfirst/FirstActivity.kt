@@ -14,8 +14,19 @@ class FirstActivity : AppCompatActivity() {
             startActivity(Intent().setClass(this, BaseFunActivity::class.java))
         }
 
-    }
+        findViewById(R.id.drawActivity).setOnClickListener {
+            startActivity(Intent().setClass(this, DrawActivity::class.java))
+        }
 
+        findViewById(R.id.listDemo).setOnClickListener {
+            startActivity(Intent().setClass(this, ListDemoActivity::class.java))
+        }
+
+        findViewById(R.id.listExample).setOnClickListener {
+            startActivity(Intent().setClass(this,ItemListActivity::class.java))
+        }
+
+    }
 
 
 }
