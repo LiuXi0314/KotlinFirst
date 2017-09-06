@@ -25,5 +25,4 @@ class FirstAdapter(private var list: List<ItemData>) : RecyclerView.Adapter<Firs
         holder!!.mContent!!.text = list!![position].content
     }
 
-
 }

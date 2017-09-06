@@ -5,18 +5,20 @@ import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.TextView
 import android.widget.Toast
-import com.lx.kotlinfirst.common.Hello
 import com.lx.kotlinfirst.R
+import com.lx.kotlinfirst.common.Hello
 
 class BaseFunActivity : AppCompatActivity() {
 
-    private var textView: TextView? = null
+    private var textView: TextView? = null //可变变量 var
+
+    private val finalTextView: TextView? = TextView(this)// 不可变变量 val
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_base_fun)
         initView()
-
+        vars(1, 2, 3, 4, 5, 6, 7, 8, 9, 1111231231)
     }
 
     private fun initView() {
@@ -47,5 +49,24 @@ class BaseFunActivity : AppCompatActivity() {
         Log.d("first", "Hello.x=${Hello.x}")
     }
 
+    private fun sum(a: Int, b: Int): Int {
+        return a + b
+    }
+
     private var sum: (a: Int, b: Int) -> Int = { x, y -> x + y }
+
+    private var multiplication: (a: Int, b: Int) -> Int = { a, b -> a * b }
+
+
+    /**
+     * 可变长参函数
+     */
+    fun vars(vararg v: Int) {
+        for (i in v) {
+            Log.d("first", "$i")
+        }
+
+    }
+
+
 }

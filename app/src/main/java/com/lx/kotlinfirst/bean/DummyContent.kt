@@ -1,7 +1,7 @@
-package com.lx.kotlinfirst.dummy
+package com.lx.kotlinfirst.bean
 
-import java.util.ArrayList
-import java.util.HashMap
+import android.util.Log
+import java.util.*
 
 /**
  * Helper class for providing sample content for user interfaces created by
@@ -59,3 +59,4 @@ object DummyContent {
         }
     }
 }
+

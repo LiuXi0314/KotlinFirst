@@ -5,5 +5,7 @@ package com.lx.kotlinfirst.common
  */
 object Hello {
     var x = 10
-
+    init {
+        World()
+    }
 }

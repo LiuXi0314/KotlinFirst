@@ -14,7 +14,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.lx.kotlinfirst.fragment.ItemDetailFragment
 import com.lx.kotlinfirst.R
-import com.lx.kotlinfirst.dummy.DummyContent
+import com.lx.kotlinfirst.bean.DummyContent
 
 
 /**

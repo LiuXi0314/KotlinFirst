@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.lx.kotlinfirst.R
-import com.lx.kotlinfirst.dummy.DummyContent
+import com.lx.kotlinfirst.bean.DummyContent
 
 /**
  * A fragment representing a single Item detail screen.
