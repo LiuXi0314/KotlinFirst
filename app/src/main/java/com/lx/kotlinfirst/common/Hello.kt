@@ -1,4 +1,4 @@
-package com.lx.kotlinfirst
+package com.lx.kotlinfirst.common
 
 /**
  * Created on 17-9-4 下午4:27
