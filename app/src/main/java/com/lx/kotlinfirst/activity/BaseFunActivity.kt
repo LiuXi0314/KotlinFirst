@@ -12,7 +12,7 @@ class BaseFunActivity : AppCompatActivity() {
 
     private var textView: TextView? = null //可变变量 var
 
-    private val finalTextView: TextView? = TextView(this)// 不可变变量 val
+    private var finalTextView: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +24,7 @@ class BaseFunActivity : AppCompatActivity() {
     private fun initView() {
         findViewById(R.id.firstButton).setOnClickListener { testTextView() }
         findViewById(R.id.secondButton).setOnClickListener { doSomeThing() }
+        findViewById(R.id.label).setOnClickListener { testLabel() }
     }
 
     private fun testTextView() {
@@ -82,7 +83,11 @@ class BaseFunActivity : AppCompatActivity() {
 
 
     fun testLabel() {
+        loop@ for (i in 1..100) {
 
+            if (i == 50) break@loop
+            Log.d("test", "sssssss$i")
+        }
     }
 
 }

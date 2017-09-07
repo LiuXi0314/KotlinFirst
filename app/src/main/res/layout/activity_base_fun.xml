@@ -17,4 +17,10 @@
         style="@style/ButtonStyle"
         android:textColor="@color/colorAccent"
         android:text="基本语法的尝试"/>
+
+    <TextView
+        android:id="@+id/label"
+        style="@style/ButtonStyle"
+        android:textColor="@color/colorAccent"
+        android:text="标签Label的尝试"/>
 </LinearLayout>
