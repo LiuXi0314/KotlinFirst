@@ -68,5 +68,21 @@ class BaseFunActivity : AppCompatActivity() {
 
     }
 
+    fun test(a: Int) {
+        if (a in 1..10) {
+            Log.d("first", "ssssssss")
+        }
+    }
+
+    fun testFor(list: List<String>) {
+        for (str in list) {
+            Log.d("test", str)
+        }
+    }
+
+
+    fun testLabel() {
+
+    }
 
 }
