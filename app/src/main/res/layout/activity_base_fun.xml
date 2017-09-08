@@ -10,17 +10,20 @@
     <TextView
         android:id="@+id/firstButton"
         style="@style/ButtonStyle"
-        android:textColor="@color/colorAccent"
-        android:text="Base Fun Test"/>
+        android:text="Base Fun Test"
+        android:textColor="@color/colorAccent"/>
+
     <TextView
         android:id="@+id/secondButton"
         style="@style/ButtonStyle"
-        android:textColor="@color/colorAccent"
-        android:text="基本语法的尝试"/>
+        android:text="基本语法的尝试"
+        android:textColor="@color/colorAccent"/>
 
     <TextView
         android:id="@+id/label"
         style="@style/ButtonStyle"
-        android:textColor="@color/colorAccent"
-        android:text="标签Label的尝试"/>
+        android:text="标签Label的尝试"
+        android:textColor="@color/colorAccent"/>
+
+
 </LinearLayout>

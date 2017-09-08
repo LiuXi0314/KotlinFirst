@@ -26,5 +26,8 @@
         style="@style/ButtonStyle"
         android:text="listExample"/>
 
-
+    <TextView
+        android:id="@+id/testClass"
+        style="@style/ButtonStyle"
+        android:text="test Class"/>
 </LinearLayout>

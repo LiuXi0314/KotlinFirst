@@ -7,6 +7,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.lx.kotlinfirst.R
 import com.lx.kotlinfirst.common.Hello
+import com.lx.kotlinfirst.utils.Utils
 
 class BaseFunActivity : AppCompatActivity() {
 
@@ -19,6 +20,7 @@ class BaseFunActivity : AppCompatActivity() {
         setContentView(R.layout.activity_base_fun)
         initView()
         vars(1, 2, 3, 4, 5, 6, 7, 8, 9, 1111231231)
+
     }
 
     private fun initView() {
@@ -82,12 +84,53 @@ class BaseFunActivity : AppCompatActivity() {
     }
 
 
-    fun testLabel() {
-        loop@ for (i in 1..100) {
-
-            if (i == 50) break@loop
-            Log.d("test", "sssssss$i")
+    private fun testLabel() {
+        //break ,continue 功效一样
+        //loop@ continue@loop break@loop
+        Utils.log("----------------------------------------")
+        for (i in 1..2) {
+            for (j in 1..2) {
+                if (i == 1 && j == 1) continue
+                Utils.log("$i-------$j")
+            }
         }
+
+        Utils.log("----------------------------------------")
+        loop@ for (i in 1..2) {
+            for (j in 1..2) {
+                if (i == 1 && j == 1) continue@loop
+                Utils.log("$i-------$j")
+            }
+        }
+        Utils.log("----------------------------------------")
+
+        val arrays = intArrayOf(1, 0, 2)
+        //lit@
+        arrays.forEach lit@ {
+            if (it == 0) return@lit
+            Utils.log("--------------$it")
+        }
+        Utils.log("----------------------------------------")
+        //匿名标签
+        arrays.forEach {
+            if (it == 0) return@forEach
+            Utils.log("--------------$it")
+        }
+        Utils.log("----------------------------------------")
+//        arrays.forEach {
+//            if (it == 0) return
+//            Utils.log("--------------$it")
+//        }
+//        Utils.log("----------------------------------------")
+        //匿名函数类
+        arrays.forEach {
+            fun(it: Int) {
+                if (it == 0) return
+                Utils.log("$it")
+            }
+        }
+
     }
+
 
 }
