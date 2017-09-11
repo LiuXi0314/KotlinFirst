@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lx.kotlinfirst.activity.TestInterfaceActivity">
+
+    <TextView
+        android:id="@+id/interfaceTest"
+        style="@style/ButtonStyle"
+        android:text="来自kotlin interface 的第一次尝试"
+        android:textColor="@color/colorAccent"/>
+
+</LinearLayout>

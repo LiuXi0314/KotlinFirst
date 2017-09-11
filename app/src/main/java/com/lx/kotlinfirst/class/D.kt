@@ -27,7 +27,9 @@ open class D {
 
     annotation class D3//注解类
 
-    public fun dFun(){
+    open fun dFun(){
 
     }
+
+
 }

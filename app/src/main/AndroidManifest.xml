@@ -41,6 +41,8 @@
         </activity>
         <activity android:name=".activity.TestClassActivity">
         </activity>
+        <activity android:name=".activity.TestInterfaceActivity">
+        </activity>
     </application>
 
 </manifest>
