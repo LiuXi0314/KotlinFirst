@@ -31,6 +31,14 @@ class FirstActivity : AppCompatActivity() {
         testClass.setOnClickListener {
             startActivity(Intent().setClass(this, TestClassActivity::class.java))
         }
+
+        testInterface.setOnClickListener {
+            startActivity(Intent().setClass(this, TestInterfaceActivity::class.java))
+        }
+
+        testData.setOnClickListener {
+            startActivity(Intent().setClass(this, TestDataActivity::class.java))
+        }
     }
 
 

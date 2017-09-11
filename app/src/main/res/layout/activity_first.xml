@@ -30,4 +30,14 @@
         android:id="@+id/testClass"
         style="@style/ButtonStyle"
         android:text="test Class"/>
+
+    <TextView
+        android:id="@+id/testInterface"
+        style="@style/ButtonStyle"
+        android:text="testInterface"/>
+
+    <TextView
+        android:id="@+id/testData"
+        style="@style/ButtonStyle"
+        android:text="testData"/>
 </LinearLayout>
