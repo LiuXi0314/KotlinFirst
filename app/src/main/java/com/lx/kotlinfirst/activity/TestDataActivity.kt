@@ -7,7 +7,6 @@ import com.lx.kotlinfirst.utils.Utils
 import kotlinx.android.synthetic.main.activity_test_data.*
 
 class TestDataActivity : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test_data)
