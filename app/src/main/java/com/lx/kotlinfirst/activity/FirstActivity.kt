@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.lx.kotlinfirst.R
+import com.lx.kotlinfirst.`class`.TestOperator
 import kotlinx.android.synthetic.main.activity_first.*
 
 class FirstActivity : AppCompatActivity() {
@@ -39,6 +40,10 @@ class FirstActivity : AppCompatActivity() {
         testData.setOnClickListener {
             startActivity(Intent().setClass(this, TestDataActivity::class.java))
         }
+
+        TestOperator.DataPlus(1, 2) + TestOperator.DataPlus(2, 4)
+
+
     }
 
 
